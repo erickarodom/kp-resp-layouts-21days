@@ -1,0 +1,78 @@
+/* INSTRUCTIONS
+ *
+ * 1) Limit the total width of
+ *    the .intro-conent to about half
+ *    of it's parent
+ *
+ * 2) Stop the text from overflowing
+ *    out the bottom at small screen
+ *    widths
+ *
+ * You may modify the HTML if needed
+ *
+ */
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  h1{
+    font-size: 4rem;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    background: #23424a;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em; 
+  }
+
+  .intro-content {
+    max-width: 50%;
+  }
+
+  .call-to-action{
+    background-image: linear-gradient( to right, rgb(255, 174, 0), rgb(255, 115, 0));
+    color: #fff;
+    text-align: center;
+    padding: 3.125rem;
+    font-size: 1rem;
+    
+    & h2 {
+        font-size: 3.5em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height: .9;
+    }
+
+    & .cta-body{
+        padding: 1.5em 25%;
+    
+    }
+
+    & button{
+       background-color: black;
+       border: double 4px white;
+       border-radius: 5px;
+       font-size: 1em;
+       color: #fff;
+       text-transform: uppercase;
+       padding:  1rem 2.5rem;
+       letter-spacing: .25rem;
+       box-shadow: -2px 2px 5px 1px rgba(14, 13, 13, 0.644);
+       
+    }
+
+    & button:hover{
+        cursor: pointer;
+        box-shadow: none;
+        transition: .5s;
+    }    
+  }
+  
